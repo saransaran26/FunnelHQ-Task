@@ -15,7 +15,7 @@ function Login() {
             name,password
         }
         try {
-            const res = await axios.post('http://localhost:3000/api/login',payload)
+            const res = await axios.post('https://funnelhq-task.onrender.com/api/login',payload)
             console.log(res.response);
             // const {token} = res.data
             // localStorage.setItem('token',token)

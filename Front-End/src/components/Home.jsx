@@ -9,7 +9,7 @@ function Home() {
   useEffect(() => {
     const fun = async () => {
       try {
-        const response = await axios.get("http://localhost:3000");
+        const response = await axios.get("https://funnelhq-task.onrender.com");
         console.log(response.data);
         dispatch(getUser(response.data));
       } catch (error) {

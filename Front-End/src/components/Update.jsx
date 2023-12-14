@@ -18,7 +18,7 @@ function Update() {
     console.log("Clicked");
     e.preventDefault()
     try {
-        const res = await axios.put(`http://localhost:3000/edit/${id}`,{name,email,age})
+        const res = await axios.put(`https://funnelhq-task.onrender.com/edit/${id}`,{name,email,age})
         console.log(res.data);
         dispatch(updateUser(res.data))
         navigate('/home')

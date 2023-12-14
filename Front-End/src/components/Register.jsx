@@ -12,7 +12,7 @@ function Register() {
     const handleRegsiter = async(e) =>{
         e.preventDefault();
         try {
-            const res = await axios.post('http://localhost:3000/api/register',{name,password})
+            const res = await axios.post('https://funnelhq-task.onrender.com/api/register',{name,password})
             console.log(res.data);
             navigate('/login')
         } catch (error) {

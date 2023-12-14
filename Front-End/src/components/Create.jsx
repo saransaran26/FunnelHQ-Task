@@ -14,7 +14,7 @@ function Create() {
   const handleCreate = async(e) =>{
     e.preventDefault()
     try {
-        const res = await axios.post('http://localhost:3000/create',{name,email,age})
+        const res = await axios.post('https://funnelhq-task.onrender.com/create',{name,email,age})
         console.log(res.data);
         dispatch(createUser(res.data))
         navigate('/home')

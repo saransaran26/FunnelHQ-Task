@@ -12,7 +12,7 @@ function User() {
   const handleDelete = async(id) => {
     console.log("Clicked");
     try {
-        const res = await axios.delete(`http://localhost:3000/delete/${id}`)
+        const res = await axios.delete(`https://funnelhq-task.onrender.com/delete/${id}`)
         dispatch(deleteUser({id}))
         
     } catch (error) {
